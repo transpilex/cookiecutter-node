@@ -41,7 +41,7 @@ def handle_js_runner(frontend_pipeline, ui_library):
         scripts = {
                 "gulp": "gulp",
                 "build": "gulp build",
-                "dev": "npm-run-all gulp preview",
+                "dev": "run-p gulp preview",
                 "preview": "nodemon app.js"
             }
         if ui_library == "Tailwind":
